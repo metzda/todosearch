@@ -1,0 +1,12 @@
+<section id="esapp">
+  <header id="header">
+    <h1>Elastic (Fuzzy) Search</h1>
+    <input id="new-todo" placeholder="Search in list" ng-model="searchvalue" ng-keyup="search()" autofocus>
+  </header>
+  <section id="main">
+    <ul id="search-result" ng-repeat="val in suggestions">{{val}}</ul>
+  </section>
+  <footer id="footer">
+    <span id="search-count">{{suggestions.length}}</span>
+  </footer>
+</section>

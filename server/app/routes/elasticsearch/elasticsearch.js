@@ -48,7 +48,6 @@ function initMapping() {
         body: {
             properties: {
                 title: { type: "string" },
-                content: { type: "string" },
                 suggest: {
                     type: "completion",
                     analyzer: "simple",
@@ -72,7 +71,6 @@ function addDocument(document) {
         type: "document",
         body: {
             title: document.title,
-            content: document.content,
             suggest: {
                 input: document.title.split(" "),
                 output: document.title,
